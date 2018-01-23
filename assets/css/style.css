@@ -1,3 +1,78 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Muli', sans-serif;
+	background-image: url("../images/middleEarthBackground.jpg");
+	background-size: cover;
+	font-size: 19px;
+	color: #FBEDC9;
+}
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	font-weight: 300;
+	color: #F5E1BC;
+	font-size: 2.2em;
+	margin-bottom: 40px;
+}
+
+section {
+	text-align: center;
+}
+
+.message {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container {
+	margin: 20px 10%;
+	width: 80%;
+	padding: 20px 10%;
+	background-color: rgba(86,55,24,.7);
+}
+
+.container2 {
+	margin: 20px 530px;
+	/*width: 80%;*/
+	padding: 20px;
+	background-color: rgba(86,55,24,.7);
+}
+
+.bench {
+	background-color: rgba(86,55,24,.7);	
+}
+
+.fighter {
+	text-transform: capitalize;
+	width: 192px;
+	height: 250px;
+	background-size: cover;
+	border: 1px solid #FBEDC9;
+	margin: 20px 5px;
+	color: #FBEDC9;
+	padding-top: 200px;
+	font-family: 'Muli', sans-serif;
+}
+
+#vs {
+	position: relative;
+	bottom: 100px;
+}
+
+#action {
+	border: 0;
+	background-color: rgb(86,55,24);
+	color: #FBEDC9;
+	font-family: 'Muli', sans-serif;
+	border: 1px solid #FBEDC9;
+	padding: 8px;
+	font-weight: 500;
+	font-size: .8em;
+}
+
+#m3 {
+	margin: 0;
+}
