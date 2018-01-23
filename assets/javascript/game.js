@@ -20,6 +20,7 @@ var sauron = {
 var fighters = [frodo, gollum, boromir, sauron];
 var heroChosen ;
 var enemyChosen ; // maybe not needed? 
+var attackCounter = 0;
 
 $(document).ready(function(){
 	// creates fighter buttons
@@ -29,7 +30,7 @@ $(document).ready(function(){
 		fighterCard.attr("id", fighters[i].name);
 		fighterCard.text(fighters[i].name + ": " + fighters[i].health + " HP");
 		$("#bench").append(fighterCard);
-		$("#" + fighters[i].name).css("background-image", "url('assets/images/" + fighters[i].name + ".jpg')");
+		$("#" + fighters[i].name).css("background-image", "url('assets/images/_" + fighters[i].name + ".jpg')");
 	};
 
 	$(".fighter").on("click", function(){
@@ -55,7 +56,12 @@ $(document).ready(function(){
 	});
 
 	// $("#action").on("click", function(){
-		// if (heroChosen === "frodo") {
+		// var frodoDamage = 0;
+		// if (heroChosen === "frodo" || enemyChosen === "frodo") {
+			// attackCounter++
+			// function frodoDamage () {
+				// return attackCounter * 8; 
+			// }
 // math for frodo's damage
 // subtract hero damage from enemy health
 // subtract enemy damage from hero health
