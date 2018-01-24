@@ -1,19 +1,19 @@
 var frodo = {
-	"name" : "frodo",
+	"name" : "Frodo",
 	"health" : 120
 }
 var gollum = {
-	"name" : "gollum",
+	"name" : "Gollum",
 	"health" : 100,
 	"damage" : 5
 }
 var boromir = {
-	"name" : "boromir",
+	"name" : "Boromir",
 	"health" : 150,
 	"damage" : 20
 } 
 var sauron = {
-	"name" : "sauron",
+	"name" : "Sauron",
 	"health" : 180,
 	"damage" : 25
 }
@@ -30,7 +30,7 @@ $(document).ready(function(){
 		fighterCard.attr("id", fighters[i].name);
 		fighterCard.text(fighters[i].name + ": " + fighters[i].health + " HP");
 		$("#bench").append(fighterCard);
-		$("#" + fighters[i].name).css("background-image", "url('http://pmmiv.com/rolePlayerGame/assets/images/_" + fighters[i].name + ".jpg')");
+		$("#" + fighters[i].name).css("background-image", "url('assets/images/" + fighters[i].name + ".jpg')");
 	};
 
 	$(".fighter").on("click", function(){
