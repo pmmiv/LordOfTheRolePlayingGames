@@ -1,19 +1,19 @@
 var frodo = {
-	"name" : "Frodo",
+	"name" : "frodo",
 	"health" : 120
 }
 var gollum = {
-	"name" : "Gollum",
+	"name" : "gollum",
 	"health" : 100,
 	"damage" : 5
 }
 var boromir = {
-	"name" : "Boromir",
+	"name" : "boromir",
 	"health" : 150,
 	"damage" : 20
 } 
 var sauron = {
-	"name" : "Sauron",
+	"name" : "sauron",
 	"health" : 180,
 	"damage" : 25
 }
