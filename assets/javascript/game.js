@@ -30,7 +30,7 @@ $(document).ready(function(){
 		fighterCard.attr("id", fighters[i].name);
 		fighterCard.text(fighters[i].name + ": " + fighters[i].health + " HP");
 		$("#bench").append(fighterCard);
-		$("#" + fighters[i].name).css("background-image", "url('assets/images/_" + fighters[i].name + ".jpg')");
+		$("#" + fighters[i].name).css("background-image", "url('http://pmmiv.com/rolePlayerGame/assets/images/_" + fighters[i].name + ".jpg')");
 	};
 
 	$(".fighter").on("click", function(){
