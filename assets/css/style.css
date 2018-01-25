@@ -22,6 +22,10 @@ section {
 	text-align: center;
 }
 
+p {
+	text-transform: capitalize;
+}
+
 .message {
 	margin-top: 20px;
 	margin-bottom: 20px;
