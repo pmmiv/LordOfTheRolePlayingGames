@@ -55,13 +55,23 @@ $(document).ready(function(){
 		}
 	});
 
-	// $("#action").on("click", function(){
-		// var frodoDamage = 0;
-		// if (heroChosen === "frodo" || enemyChosen === "frodo") {
-			// attackCounter++
-			// function frodoDamage () {
-				// return attackCounter * 8; 
-			// }
+	$("#action").on("click", function(){
+		var heroDamage, enemyDamage;
+		if (heroChosen == "frodo" || enemyChosen == "frodo") {
+			// calculates frodo's damage
+			attackCounter++;
+			var frodoDamage = attackCounter * 8;
+			if (heroChosen === "frodo") {
+				enemyChosen.health - frodoDamage;
+				heroChosen.health - enemyChosen.damage;
+			} 
+			// else {
+
+			// };
+			// need to subtract damage from health and display it
+		// else {
+
+		// }
 // math for frodo's damage
 // subtract hero damage from enemy health
 // subtract enemy damage from hero health
@@ -69,10 +79,10 @@ $(document).ready(function(){
 // if enemy health is <1 and enemies remain set activeEnemy to undefined, and bring $(".container2") back
 // if enemy health is <1 and no enemies remain display win message and change button to reset the game.
 // target hero card and print new hp text
-		// };
+		};
 		// else {
 // do everything done for frodo except hero damage is set in the object
 		// };
 
-	// });
+	});
 });
