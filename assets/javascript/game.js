@@ -19,7 +19,7 @@ var sauron = {
 }
 var fighters = [frodo, gollum, boromir, sauron];
 var heroChosen ;
-var enemyChosen ; // maybe not needed? 
+var enemyChosen ; 
 var attackCounter = 0;
 var frodoDamage ;
 var enemiesRemaining = 3;
@@ -71,7 +71,6 @@ function attack () {
 
 
 $(document).ready(function(){
-	// creates fighter buttons
 	for (i = 0; i < fighters.length; i++) {
 		var fighterCard = $("<button>");
 		fighterCard.addClass("fighter");
@@ -90,8 +89,7 @@ $(document).ready(function(){
 			$("#m3").html("Select your foe.");			
 			$(this).addClass("hero");
 			heroChosen = $(this).data("data");
-		}
-		else {
+		} else {
 			$(".hero").css("margin", "20px 80px");
 			$(".battleground").append("<span class='vs'>Versus</span>");
 			$(".battleground").append(this);
@@ -104,15 +102,5 @@ $(document).ready(function(){
 			$(".container2").css("display", "none")
 		}
 	});
-
-
-	// math for frodo's damage
-	// subtract hero damage from enemy health
-	// subtract enemy damage from hero health
-	// target enemy card and print new hp text
-	// if enemy health is <1 and enemies remain set activeEnemy to undefined, and bring $(".container2") back
-	// if enemy health is <1 and no enemies remain display win message and change button to reset the game.
-	// target hero card and print new hp text
-	// do everything done for frodo except hero damage is set in the object
 
 });
