@@ -5,7 +5,7 @@ by PM Milam IV
 
 ### Purpose:
 
-This project was built to explore js objects logic and to highlight the importantace of Tolkien's epic.
+This project was built to explore js objects and to highlight the importantace of Tolkien's epic.
 
 ## Deployment:
 
